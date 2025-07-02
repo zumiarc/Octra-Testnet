@@ -42,8 +42,13 @@ pip install -r requirements.txt
 cp wallet.json.example wallet.json
 ```
 
-2. Open wallet.json edit with your wallet data
+2. Open wallet.json
 ```
+nano wallet.json
+```
+
+3. Edit "priv" and "addr" section with your wallet data
+```json
 {
   "priv": "private-key-here",
   "addr": "octxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
@@ -51,7 +56,7 @@ cp wallet.json.example wallet.json
 }
 ```
 
-3. Run
+4. Run
 ```
 ./run.sh
 ```
